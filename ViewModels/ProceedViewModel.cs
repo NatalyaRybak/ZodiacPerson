@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ZodiacPerson.Managers;
+﻿using ZodiacPerson.Managers;
 using ZodiacPerson.Models;
 using ZodiacPerson.Tools;
 

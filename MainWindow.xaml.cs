@@ -1,5 +1,4 @@
-﻿using System.Windows;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 using ZodiacPerson.Managers;
 using ZodiacPerson.Tools;
 using ZodiacPerson.ViewModels;

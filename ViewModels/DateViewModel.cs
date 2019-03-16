@@ -8,7 +8,6 @@ using ZodiacPerson.Managers;
 using ZodiacPerson.Models;
 using ZodiacPerson.Properties;
 using ZodiacPerson.Tools;
-using static System.Threading.Tasks.Task;
 
 namespace ZodiacPerson.ViewModels
 {

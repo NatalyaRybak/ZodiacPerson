@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Windows;
-using ZodiacPerson.Models;
+﻿using ZodiacPerson.Models;
 
 namespace ZodiacPerson.Managers
 {
