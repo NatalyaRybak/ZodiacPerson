@@ -62,6 +62,8 @@ namespace ZodiacPerson.ViewModels
             set
             {
                 _birthDate = value;
+                OnPropertyChanged();
+
             }
         }
         public bool IsBirthday => DateTime.Today.Month == _birthDate.Month && DateTime.Today.Day == _birthDate.Day;

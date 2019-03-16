@@ -25,10 +25,10 @@ namespace ZodiacPerson.Tools
             switch (mode)
             {
                 case ModesEnum.DataPerson:
-                    _contentWindow.ContentControl.Content = _dataPersonView ?? (_dataPersonView = new DataPersonView());
+                    _contentWindow.ContentControl.Content = new DataPersonView();
                     break;
                 case ModesEnum.Proceeded:
-                    _contentWindow.ContentControl.Content = _proceededView ?? (_proceededView = new ProceededView());
+                    _contentWindow.ContentControl.Content =  new ProceededView();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(mode), mode, null);

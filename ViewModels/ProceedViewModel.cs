@@ -29,7 +29,7 @@ namespace ZodiacPerson.ViewModels
         public string IsBirthday => $"Today is {(_person.IsBirthday ? "" : "not ")}your birthday";
         public string IsAdult => $"You are {(_person.IsAdult ? "" : "not ")}adult";
 
-        public RelayCommand<object> BackCommand
+        public RelayCommand<object> BackCommand 
         {
             get
             {

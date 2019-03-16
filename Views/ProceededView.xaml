@@ -16,6 +16,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -23,19 +24,22 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Personal info" Margin="10" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2" Width="280"/>
-        <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Content="First Name : " FontSize="14" Grid.ColumnSpan="2" Width="285" Margin="5,0,0,0"/>
-        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding FirstName}" />
-        <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Last Name: " />
-        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding LastName}" />
-        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Email: "/>
-        <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding Email}"/>
-        <TextBlock Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Sun sign: "/>
-        <TextBlock Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding SunSign}"/>
-        <TextBlock Grid.Row="5" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Chinese sign: "/>
-        <TextBlock Grid.Row="5" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding ChineseSign}"/>
-        <TextBlock Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding IsAdult}"/>
-        <TextBlock Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding IsBirthday}"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="114,55,0,-22" Grid.Row="8" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"
+        <!-- <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Content="First Name : " FontSize="14" Grid.ColumnSpan="2" Width="285" Margin="5,0,0,0"/> -->
+        <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Birth Date: " />
+        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding BirthDate}" />
+        <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="First Name: " />
+        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding FirstName}" />
+        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Last Name: " />
+        <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding LastName}" />
+        <TextBlock Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Email: "/>
+        <TextBlock Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding Email}"/>
+        <TextBlock Grid.Row="5" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Sun sign: "/>
+        <TextBlock Grid.Row="5" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding SunSign}"/>
+        <TextBlock Grid.Row="6" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Chinese sign: "/>
+        <TextBlock Grid.Row="6" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding ChineseSign}"/>
+        <TextBlock Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding IsAdult}"/>
+        <TextBlock Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding IsBirthday}"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="114,55,0,-22" Grid.Row="9" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"
                 Grid.Column="0" RenderTransformOrigin="0.44,1" Command ="{Binding BackCommand}"/>
 
     </Grid>
