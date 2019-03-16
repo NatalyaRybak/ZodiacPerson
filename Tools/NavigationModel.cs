@@ -12,9 +12,7 @@ namespace ZodiacPerson.Tools
     internal class NavigationModel
     {
         private readonly IContentWindow _contentWindow;
-        private DataPersonView _dataPersonView;
-        private ProceededView _proceededView;
-
+       
         internal NavigationModel(IContentWindow contentWindow)
         {
             _contentWindow = contentWindow;
