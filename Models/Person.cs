@@ -52,7 +52,8 @@ namespace ZodiacPerson.Models
             get { return _email; }
             set
             {
-                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+//                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w))+)$");
                 Match match = regex.Match(value);
                 if (match.Success)
                 {
@@ -71,11 +72,11 @@ namespace ZodiacPerson.Models
                 int v = (DateTime.Today.DayOfYear >= value.DayOfYear ? 0 : 1);
                 var age = (DateTime.Today.Year - value.Year) - v;
                 var diff = DateTime.Today - value;
-                if (diff.Days <= 0) { throw new TooPastBirthdayException(value); } else
+                if (diff.Days <= 0) { throw new FutureBirthdayException(value); } else
                 {
                     _birthDate = value;
                 }
-                if (age >= 135) { throw new FutureBirthdayException(value); }
+                if (age >= 135) { throw new TooPastBirthdayException(value); }
                 else
                 {
                     _birthDate = value;
